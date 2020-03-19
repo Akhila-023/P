@@ -1,0 +1,42 @@
+abstract class Bank{
+	abstract int getBalance();
+	{
+		
+	}
+}
+class A extends Bank{
+	int getBalance()
+
+	{
+		return 100;
+	}
+}
+class B extends Bank{
+	int getBalance()
+
+	{
+		return 150;
+	}
+}
+class C extends Bank{
+	int getBalance()
+
+	{
+		return 200;
+	}
+}
+
+public class Bank1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank b;
+		b=new A();
+		System.out.println(b.getBalance());
+		b=new B();
+		System.out.println(b.getBalance());
+b=new C();
+System.out.println(b.getBalance());
+	}
+
+}
