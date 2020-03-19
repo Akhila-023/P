@@ -1,0 +1,26 @@
+public class Addamount {
+	int amount;
+public Addamount()
+{
+	System.out.println("no amount will be added to the piggie bank");
+}
+	public Addamount(int amount) {
+	 
+		int intial=50;
+		this.amount = amount;
+		int c=amount+intial;
+		System.out.println("after adding amount");
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+	
+		// TODO Auto-generated method stub
+
+		Addamount a=new Addamount();
+		Addamount b=new Addamount(10);
+		
+
+	}
+
+}
