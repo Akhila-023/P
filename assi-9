@@ -1,0 +1,30 @@
+class rectangle {
+	int lenth;
+	int width;
+	
+	public rectangle(int lenth, int width) {
+		super();
+		this.lenth = lenth;
+		this.width = width;
+	}
+
+	void Area(int length,int breadth)
+	{
+	
+		int area=length*breadth;
+		System.out.println(area);
+	}
+}
+class Crectangle
+{
+public static void main(String args[])
+{ 
+	rectangle c=new rectangle(0,0);
+	rectangle d=new rectangle(0,0);
+	c.Area(4,5);
+	d.Area(5,8);
+	
+	
+}
+	
+}
