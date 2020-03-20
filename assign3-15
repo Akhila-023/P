@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class Fine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		Scanner o=new Scanner(System.in);
+		System.out.println("enter late submission of books ");
+		int i=o.nextInt();
+		double fine;
+		if(i<5)
+		{
+			fine=0.5;
+			System.out.println("fine is"+fine);
+	}
+		else if(i>6&&i<10)
+		{
+			fine=1.00;
+			System.out.println( "fine is"+fine);
+		}
+		else if(i>10&&i<30)
+		{
+			fine=5.00;
+			System.out.println(fine);
+			
+		}
+		else
+		{
+			System.out.println("membership is cancelled");
+		}
+		
+
+	}catch(Exception e)
+{
+		System.out.println(e);
+}
+
+}
+}import java.util.Scanner;
+
+public class Fine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		Scanner o=new Scanner(System.in);
+		System.out.println("enter late submission of books ");
+		int i=o.nextInt();
+		double fine;
+		if(i<5)
+		{
+			fine=0.5;
+			System.out.println("fine is"+fine);
+	}
+		else if(i>6&&i<10)
+		{
+			fine=1.00;
+			System.out.println( "fine is"+fine);
+		}
+		else if(i>10&&i<30)
+		{
+			fine=5.00;
+			System.out.println(fine);
+			
+		}
+		else
+		{
+			System.out.println("membership is cancelled");
+		}
+		
+
+	}catch(Exception e)
+{
+		System.out.println(e);
+}
+
+}
+}
