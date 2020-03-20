@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Deletenum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int a[]=new int[10];
+int n,i;
+int index;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter number of elements");
+n=sc.nextInt();//no of element
+System.out.println("enter"+n+"elements");
+for(i=0;i<n;i++) {
+	a[i]=sc.nextInt();}//elements in array
+System.out.println("content in array");
+for(i=0;i<n;i++)
+{
+	System.out.println(a[i]+"");
+}System.out.println("enter ele");
+int ele=sc.nextInt();
+
+for(i=0;i<n;i++)
+{
+	if(a[i]==ele)
+	{
+		for(int j=i;j<n-1;j++)
+		{
+			a[j]=a[j+1];
+		}
+	}
+}
+System.out.println("index");
+index=sc.nextInt();
+
+if(index>=n+1)
+{
+	System.out.println("error");
+}else
+{ 
+	for(i=index-1;i<n-1;i++)
+	{
+		a[i]=a[i+1];
+		
+	}
+}System.out.println("after deletion");
+for(i=0;i<n-1;i++)
+{
+	System.out.println(a[i]);
+}
+	
+	}
+
+}
