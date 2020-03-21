@@ -1,0 +1,45 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+ class Employee1 {
+int emp_id;
+String empname;
+float basicsalary;
+
+
+public Employee1(int emp_id, String empname, float basicsalary) {
+	super();
+	this.emp_id = emp_id;
+	this.empname = empname;
+	this.basicsalary = basicsalary;
+}
+void calculation()
+{
+	float da=basicsalary*15/100;
+	float hra=basicsalary*10/100;
+	float pf=basicsalary+da+hra;
+	System.out.println("emp_id" +emp_id);
+	System.out.println("empname"+empname);
+	System.out.println("pf"+pf);
+}
+}
+class Employee
+{
+public static void main(String[] args) throws NumberFormatException, IOException {
+		// TODO Auto-generated method stub
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("enter employeeid");
+	int id=Integer.parseInt(br.readLine());
+	System.out.println("enter employee name");
+	String name=br.readLine();
+	System.out.println("enter pf");
+	float pf=Float.parseFloat(br.readLine());
+Employee1 e=new Employee1(id,name,pf);
+e.calculation();
+}
+}
+
+	
+
+
