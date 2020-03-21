@@ -1,0 +1,36 @@
+class Student{
+	String name;
+	int id;
+	String address;
+	public Student(String name,int id,String address) //creating parameterised  constructor
+	{
+		super();
+		this.name = name;
+		this.id=id;
+		this.address=address;
+	}
+	public void isequal(boolean b)//is equal method and getting object
+	{
+		// TODO Auto-generated method stub
+		System.out.println(b);	
+	}
+	
+}
+class Student3
+{
+	public static void main(String[] args) {
+	try {
+	Student s=new Student("akhila",102,"Gudivada");
+	Student v=new Student("akhila",0,"vijayawada");
+	Student t=s;//creating instance for object
+	t.isequal(s.equals(v));//checking objects are equal or not
+	t.isequal(s.equals(t));//checking objects are equal or not
+  }catch(Exception e)
+	{
+		System.out.println(".");
+	}
+	
+	
+	
+}
+}
