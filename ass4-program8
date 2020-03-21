@@ -1,0 +1,34 @@
+class Movie3
+{
+	String title;
+	String studio;
+	String rating;
+	public Movie3(String title, String studio) {
+		super();
+		this.title = title;
+		this.studio = studio;
+	}
+	public String getRating() {
+		return rating;
+	}
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
+	
+	void display()
+	{
+		System.out.println(title+"   "+studio);
+	}
+}
+
+public class Movie2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Movie3 m=new Movie3("MANAM","Annapurnastudio");
+		m.setRating("PG");
+		System.out.println(m.getRating());
+		m.display();
+	}
+
+}
