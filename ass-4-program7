@@ -1,0 +1,26 @@
+class Movie
+{
+	private String title;//set the class variable for title
+	private String studio;//set the class variable for studio
+	private String rating;//set the class variable for rating
+	public Movie(String title, String studio, String rating) //parameterised constructor
+	{
+		super();
+		this.title = title;
+		this.studio = studio;
+		this.rating = rating;
+	}
+	void display()
+	{
+		System.out.println(title+"   "+studio+"  "+rating);
+	}
+}
+public class Movie1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Movie m=new Movie("MANAM","Annapurnastudio","family oriented");
+m.display();
+	}
+
+}
