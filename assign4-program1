@@ -1,0 +1,27 @@
+class Box1 {
+
+
+int length;
+int breadth;
+int height;
+public Box1(int length, int breadth, int height) {
+	super();
+	this.length = length;
+	this.breadth = breadth;
+	this.height = height;
+}
+int volume()
+{
+	return length*breadth*height;
+}
+
+	}
+
+class Box
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Box1 b=new Box1(10,20,30);
+		System.out.println(b.volume());
+}
+}
